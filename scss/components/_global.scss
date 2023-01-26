@@ -1,0 +1,262 @@
+@import "../bootstrap-utilities.scss"; //arahkan ke file bootstrap-utilities.scss 
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Josefin+Sans&display=swap');
+
+.selector-for-some-widget {
+   box-sizing: content-box;
+}
+
+body {
+   background: url(../img/bg.jpg) no-repeat center center fixed;
+   background-size: cover;
+}
+
+/* Mengeset ukuran scrollbar */
+::-webkit-scrollbar {
+   width: 10px;
+   height: 10px;
+}
+
+/* Mengeset warna background scrollbar */
+::-webkit-scrollbar-thumb {
+   background-color: #888;
+}
+
+/* Mengeset warna background scrollbar ketika dihover */
+::-webkit-scrollbar-thumb:hover {
+   background-color: #555;
+}
+
+/* Firefox */
+scrollbar {
+   width: 0.2em;
+   background-color: #F5F5F5;
+}
+
+scrollbar-thumb {
+   background-color: #D30008;
+}
+
+/* Edge /
+-ms-overflow-style: none; / Remove scrollbar for IE and Edge */
+
+/* Add styling for IE and Edge */
+::-webkit-scrollbar {
+   width: 0.2em;
+   background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: #D30008;
+}
+
+.splider {
+   .splide {
+      .splide__track {
+         max-height: 400px;
+
+         ul {
+            li {
+               img {
+                  width: 250px;
+                  padding-bottom: 56.25%;
+                  /* 9:16 aspect ratio */
+               }
+            }
+         }
+      }
+   }
+}
+
+// Source mixins
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+
+
+nav {
+   background-color: transparent !important;
+
+   .navbar-brand {
+      font-family: 'Chewy', cursive;
+   }
+
+   .navbar-collapse {
+      .navbar-nav {
+         display: flex;
+         margin: auto;
+
+         li {
+            margin: 10px;
+            background-color: rgba(255, 255, 0, 0.651);
+            border-radius: 20px;
+            width: 7rem;
+            font-weight: bold;
+            text-align: center;
+
+            a {
+               font-family: 'Josefin Sans', sans-serif;
+            }
+         }
+      }
+
+      .right {
+         display: flex;
+
+         .search {
+            background-color: rgba(255, 255, 0, 0.651);
+            border-radius: 20px;
+            border: none;
+            width: 8rem;
+         }
+
+         .dropdown {
+            button {
+               background-color: rgb(187, 3, 3);
+               border-radius: 20px;
+               border: none;
+            }
+
+            ul {
+               background-color: rgba(255, 255, 0, 0.651);
+               border: none;
+               margin-left: -100px;
+
+               li {
+                  margin: 5px 0px;
+
+                  a {
+                     display: flex;
+                     align-items: center;
+
+                     span {
+                        margin-left: 10px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+h1,
+h2 {
+   text-align: center;
+   color: rgb(29, 29, 29);
+   margin: 30px 0px;
+   font-style: italic;
+}
+
+.order {
+   display: flex;
+   margin: auto;
+   background-color: rgba(255, 0, 0, 0.76);
+   color: white;
+   border-radius: 20px;
+
+   &:hover {
+      background-color: rgb(255, 0, 0);
+      color: white;
+      border: 1px solid white;
+
+   }
+}
+
+
+@include media-breakpoint-down(lg) {
+   nav {
+      background-color: transparent !important;
+
+      .navbar-collapse {
+         .navbar-nav {
+
+            display: grid;
+            place-items: center;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 kolom dengan ukuran 1fr */
+            grid-template-rows: auto;
+            /* baris dengan ukuran otomatis */
+            grid-gap: 10px;
+
+            /* jarak antar item grid */
+            li {
+               background-color: rgba(255, 255, 0, 0.651);
+               border-radius: 20px;
+               width: 10rem;
+               font-weight: bold;
+               text-align: center;
+               align-items: center;
+            }
+         }
+
+         .right {
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+
+            .search {
+               background-color: rgba(255, 255, 0, 0.651);
+               border-radius: 20px;
+               border: none;
+               width: 100%;
+            }
+
+            .user {
+               display: flex;
+
+               button {
+                  background-color: rgb(187, 3, 3);
+                  border-radius: 20px;
+                  border: none;
+               }
+
+               ul {
+                  background-color: rgba(255, 255, 0, 0.651);
+                  border: none;
+                  margin-left: -100px;
+               }
+            }
+         }
+      }
+   }
+}
+
+@include media-breakpoint-down(md) {
+   nav {
+
+      .navbar-collapse {
+         .navbar-nav {
+            grid-template-columns: repeat(2, 1fr);
+
+            li {
+               background-color: rgba(255, 255, 0, 0.651);
+               border-radius: 20px;
+               width: 6rem;
+               font-weight: bold;
+               text-align: center;
+            }
+         }
+
+      }
+   }
+}
+
+@include media-breakpoint-down(sm) {
+   nav {
+      .navbar-collapse {
+         .navbar-nav {
+            grid-template-columns: repeat(1, 1fr);
+         }
+      }
+   }
+}
+
+
+// @include media-breakpoint-up(xl) {
+//    ...
+// }
+
+// @include media-breakpoint-up(xxl) {
+//    ...
+// }

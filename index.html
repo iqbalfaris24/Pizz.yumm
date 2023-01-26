@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="scss/style.css">
+   <link rel="stylesheet" href="splide/dist/css/splide.min.css">
+   <script src="https://unpkg.com/feather-icons"></script>
+   <script src="https://kit.fontawesome.com/d8bf84de76.js" crossorigin="anonymous"></script>
+   <title>Document</title>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+         <a class="navbar-brand" href="#">Pizz.yumm</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-pizza-slice"></i></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Store</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Delivery</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+               </li>
+            </ul>
+            <div class="right">
+               <form class="d-flex" role="search">
+                  <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+               </form>
+               <div class="dropdown user">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                     aria-expanded="false">
+                     <i data-feather="user"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i data-feather="log-in"></i>
+                           <span>Login</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#">
+                           <i data-feather="user-plus"></i>
+                           <span>Register</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <h1>Choice of pizza menu today, Unmatched delicacy</h1>
+   <div class="container splider">
+      <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+         <div class="splide__track">
+            <ul class="splide__list">
+               <li class="splide__slide">
+                  <img src="img/1.jpg" alt="">
+               </li>
+               <li class="splide__slide">
+                  <img src="img/2.jpg" alt="">
+               </li>
+               <li class="splide__slide">
+                  <img src="img/1.jpg" alt="">
+               </li>
+               <li class="splide__slide">
+                  <img src="img/6.jpg" alt="">
+               </li>
+               <li class="splide__slide">
+                  <img src="img/5.jpg" alt="">
+               </li>
+               <li class="splide__slide">
+                  <img src="img/6.jpg" alt="">
+               </li>
+            </ul>
+         </div>
+      </section>
+   </div>
+   <h2>There are promos every month, let's order your favorite pizza now!</h2>
+   <button type="button" class="btn order">Order Now</button>
+
+
+
+
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script>
+      feather.replace()
+   </script>
+   <script src="splide/dist/js/splide.js"></script>
+   <script src="splide/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.js"></script>
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         new Splide('.splide', {
+            type: 'loop',
+            drag: 'free',
+            snap: true,
+            focus: 'center',
+            perPage: getPerPage(),
+            autoScroll: {
+               speed: 0.2,
+            },
+         }).mount(window.splide.Extensions);
+         window.addEventListener('resize', function () {
+            splide.options.perPage = getPerPage();
+            splide.refresh();
+         });
+
+         function getPerPage() {
+            if (window.innerWidth < 576) {
+               return 1;
+            } else if (window.innerWidth < 756) {
+               return 3;
+            } else {
+               return 5;
+            }
+         }
+      });
+
+   </script>
+</body>
+
+</html>
