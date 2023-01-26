@@ -38,31 +38,35 @@
                   <a class="nav-link" href="#">About Us</a>
                </li>
             </ul>
-            <div class="right">
-               <form class="d-flex" role="search">
-                  <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
-               </form>
-               <div class="dropdown user">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                     aria-expanded="false">
-                     <i data-feather="user"></i>
-                  </button>
-                  <ul class="dropdown-menu">
-                     <li>
-                        <a class="dropdown-item" href="#">
-                           <i data-feather="log-in"></i>
-                           <span>Login</span>
-                        </a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="#">
-                           <i data-feather="user-plus"></i>
-                           <span>Register</span>
-                        </a>
-                     </li>
-                  </ul>
+            <row class="right">
+               <div class="col-8 col-sm-10">
+                  <form class="d-flex" role="search">
+                     <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+                  </form>
                </div>
-            </div>
+               <div class="col-sm-2">
+                  <div class="dropdown user">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i data-feather="user"></i>
+                     </button>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i data-feather="log-in"></i>
+                              <span>Login</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i data-feather="user-plus"></i>
+                              <span>Register</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </row>
          </div>
       </div>
    </nav>

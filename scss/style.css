@@ -5149,6 +5149,9 @@ scrollbar-thumb {
 .splider .splide .splide__track {
   max-height: 400px;
 }
+.splider .splide .splide__track ul li {
+  text-align: center;
+}
 .splider .splide .splide__track ul li img {
   width: 250px;
   padding-bottom: 56.25%;
@@ -5183,7 +5186,6 @@ nav .navbar-collapse .right .search {
   background-color: rgba(255, 255, 0, 0.651);
   border-radius: 20px;
   border: none;
-  width: 8rem;
 }
 nav .navbar-collapse .right .dropdown button {
   background-color: rgb(187, 3, 3);
@@ -5260,7 +5262,6 @@ h2 {
     background-color: rgba(255, 255, 0, 0.651);
     border-radius: 20px;
     border: none;
-    width: 100%;
   }
   nav .navbar-collapse .right .user {
     display: flex;
