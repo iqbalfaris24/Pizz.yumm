@@ -1,0 +1,122 @@
+.login {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+
+   .row {
+      display: flex !important;
+      width: 800px;
+      height: 600px;
+      background-color: rgba(255, 255, 0, 0.651);
+      border: 2px solid red;
+      border-radius: 20px;
+      overflow: hidden;
+
+      .login-form {
+
+         .login-content {
+            width: 100%;
+            height: 100%;
+
+            h1 {
+               text-align: start;
+            }
+
+            input {
+               background-color: transparent !important;
+               border: none;
+               border-bottom: 1px solid red;
+
+               &:active,
+               ::after,
+               :focus,
+               :active {
+                  border: none;
+               }
+            }
+
+            button {
+               background-color: rgba(255, 0, 0, 0.76);
+               color: white;
+               border: 1px solid rgba(255, 0, 0, 0.76);
+               border-radius: 20px;
+
+               &:hover {
+                  background-color: rgb(255, 0, 0);
+                  color: white;
+                  border: 1px solid white;
+
+               }
+            }
+
+         }
+      }
+
+      .jumbotron {
+         background-image: url(/img/9.jpg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         text-align: center;
+
+         img {
+            width: 100%;
+            height: 100%;
+            animation: rotate 17s linear infinite;
+         }
+
+         @keyframes rotate {
+            0% {
+               transform: rotate(0deg);
+            }
+
+            100% {
+               transform: rotate(360deg);
+            }
+         }
+      }
+   }
+}
+
+@include media-breakpoint-up(md) {
+   .login {
+      .row {
+         .jumbotron {}
+
+         .login {}
+      }
+   }
+}
+
+@include media-breakpoint-down(md) {
+   .login {
+      .row {
+         width: 100%;
+         height: 100%;
+         border: none;
+
+         .jumbotron {
+
+            .j-content {
+
+               img {
+                  width: 200px;
+                  height: 200px;
+               }
+            }
+         }
+
+         .login-form {
+
+            .login-content {
+               margin-top: -25px;
+
+               h1 {
+                  text-align: center;
+               }
+            }
+         }
+      }
+   }
+}
