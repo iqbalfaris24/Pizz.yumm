@@ -5302,8 +5302,8 @@ h2 {
 }
 .login .row {
   display: flex !important;
-  width: 800px;
-  height: 600px;
+  max-width: 800px;
+  min-height: 600px;
   background-color: rgba(255, 255, 0, 0.651);
   border: 2px solid red;
   border-radius: 20px;
@@ -5332,6 +5332,7 @@ h2 {
   color: white;
   border: 1px solid rgba(255, 0, 0, 0.76);
   border-radius: 20px;
+  margin: 5px;
 }
 .login .row .login-form .login-content button:hover {
   background-color: rgb(255, 0, 0);
@@ -5350,6 +5351,7 @@ h2 {
   height: 100%;
   -webkit-animation: rotate 17s linear infinite;
           animation: rotate 17s linear infinite;
+  pointer-events: none;
 }
 @-webkit-keyframes rotate {
   0% {
@@ -5370,13 +5372,21 @@ h2 {
 
 @media (max-width: 767.98px) {
   .login .row {
-    width: 100%;
-    height: 100%;
-    border: none;
+    max-width: 400px;
+    min-height: 300px;
+  }
+  .login .row .jumbotron img {
+    margin: 15px 0px;
+  }
+}
+@media (max-width: 575.98px) {
+  .login .row {
+    max-width: 250px;
+    min-height: 200px;
   }
   .login .row .jumbotron .j-content img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
   .login .row .login-form .login-content {
     margin-top: -25px;
