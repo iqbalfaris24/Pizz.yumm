@@ -5460,8 +5460,11 @@ h2 {
     display: none;
   }
 }
+.store {
+  margin-bottom: 50px;
+}
 .store .card-store {
-  height: 800px;
+  min-height: 800px;
   width: 100%;
   overflow: hidden;
   background-color: rgba(255, 255, 0, 0.651);
@@ -5473,56 +5476,71 @@ h2 {
 .store .card-store .row .store-src {
   padding: 20px;
 }
-.store .card-store .row .store-src .card-search {
+.store .card-store .row .store-src .card-src {
   border: none !important;
   background-color: rgba(255, 255, 0, 0.651);
 }
-.store .card-store .row .store-src .card-search .nav-tabs {
+.store .card-store .row .store-src .card-src .nav-tabs {
   border: none !important;
 }
-.store .card-store .row .store-src .card-search .nav-tabs .nav-item {
+.store .card-store .row .store-src .card-src .nav-tabs .nav-item {
   font-weight: bold;
   text-align: center;
 }
-.store .card-store .row .store-src .card-search .nav-tabs .nav-item .nav-link {
+.store .card-store .row .store-src .card-src .nav-tabs .nav-item .nav-link {
   color: #543E09;
   font-family: "Josefin Sans", sans-serif;
 }
-.store .card-store .row .store-src .card-search .nav-tabs .nav-item .nav-link.active {
+.store .card-store .row .store-src .card-src .nav-tabs .nav-item .nav-link.active {
   color: black;
   border: 1px solid rgba(255, 0, 0, 0.76);
   background-color: rgba(255, 0, 0, 0.76);
 }
-.store .card-store .row .store-src .card-search .nav-tabs .nav-item .nav-link:hover {
+.store .card-store .row .store-src .card-src .nav-tabs .nav-item .nav-link:hover {
   color: black;
   border: 1px solid rgba(255, 0, 0, 0.76);
 }
-.store .card-store .row .store-src .card-search .tab-content {
+.store .card-store .row .store-src .card-src .tab-content {
   display: flex;
   width: 100%;
   background-color: rgba(255, 0, 0, 0.76);
 }
-.store .card-store .row .store-src .card-search .tab-content .tab-left {
+.store .card-store .row .store-src .card-src .tab-content .tab-left {
   margin: 15px 0px;
   width: 100%;
   text-align: center;
 }
-.store .card-store .row .store-src .card-search .tab-content .tab-left form {
+.store .card-store .row .store-src .card-src .tab-content .tab-left form {
   padding: 0px 30px;
 }
-.store .card-store .row .store-src .card-search .tab-content .tab-left form .src-store {
+.store .card-store .row .store-src .card-src .tab-content .tab-left form .src-store {
   border-radius: none;
   background-color: rgba(255, 255, 0, 0.651);
   outline: none;
   border: 1px solid rgb(108, 117, 125);
 }
-.store .card-store .row .store-src .card-search .tab-content .tab-left form .btn-search {
+.store .card-store .row .store-src .card-src .tab-content .tab-left form .btn-search {
   background-color: rgba(255, 255, 0, 0.651);
   border-radius: none;
   border-left: none;
 }
-.store .card-store .row .store-src .card-search .tab-content .tab-left form .btn-search:hover {
+.store .card-store .row .store-src .card-src .tab-content .tab-left form .btn-search:hover {
   color: red;
+}
+.store .card-store .row .store-src .card-src .card-content {
+  background-color: transparent;
+  overflow-y: auto;
+  max-height: 630px;
+}
+.store .card-store .row .store-src .card-src .card-content .card-body:hover {
+  background-color: rgba(255, 255, 0, 0.932);
+}
+.store .card-store .row .store-src .card-src .card-content .card-body ul li {
+  display: flex;
+  align-items: baseline;
+}
+.store .card-store .row .store-src .card-src .card-content .card-body ul li p {
+  margin: 5px 10px;
 }
 .store .card-store .row .store-maps {
   padding: 0 !important;

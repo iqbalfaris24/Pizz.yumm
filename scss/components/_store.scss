@@ -1,7 +1,8 @@
 .store {
+   margin-bottom: 50px;
 
    .card-store {
-      height: 800px;
+      min-height: 800px;
       width: 100%;
       overflow: hidden;
       background-color: rgba(255, 255, 0, 0.651);
@@ -13,7 +14,7 @@
          .store-src {
             padding: 20px;
 
-            .card-search {
+            .card-src {
                border: none !important;
                background-color: rgba(255, 255, 0, 0.651);
 
@@ -40,9 +41,7 @@
                            color: black;
                            border: 1px solid rgba(255, 0, 0, 0.76);
                         }
-
                      }
-
                   }
                }
 
@@ -79,6 +78,29 @@
                   }
 
                   // .tab-right{}
+               }
+
+               .card-content {
+                  background-color: transparent;
+                  overflow-y: auto;
+                  max-height: 630px;
+
+                  .card-body {
+                     &:hover {
+                        background-color: rgba(255, 255, 0, 0.932);
+                     }
+
+                     ul {
+                        li {
+                           display: flex;
+                           align-items: baseline;
+
+                           p {
+                              margin: 5px 10px;
+                           }
+                        }
+                     }
+                  }
                }
             }
          }
