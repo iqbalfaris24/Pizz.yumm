@@ -1,0 +1,91 @@
+.store {
+
+   .card-store {
+      height: 800px;
+      width: 100%;
+      overflow: hidden;
+      background-color: rgba(255, 255, 0, 0.651);
+      padding: 0px 10px;
+
+      .row {
+         height: 100%;
+
+         .store-src {
+            padding: 20px;
+
+            .card-search {
+               border: none !important;
+               background-color: rgba(255, 255, 0, 0.651);
+
+               .nav-tabs {
+                  border: none !important;
+
+                  .nav-item {
+                     font-weight: bold;
+                     text-align: center;
+
+
+
+                     .nav-link {
+                        color: #543E09;
+                        font-family: 'Josefin Sans', sans-serif;
+
+                        &.active {
+                           color: black;
+                           border: 1px solid rgba(255, 0, 0, 0.76);
+                           background-color: rgba(255, 0, 0, 0.76);
+                        }
+
+                        &:hover {
+                           color: black;
+                           border: 1px solid rgba(255, 0, 0, 0.76);
+                        }
+
+                     }
+
+                  }
+               }
+
+               .tab-content {
+                  display: flex;
+                  width: 100%;
+                  background-color: rgba(255, 0, 0, 0.76);
+
+                  .tab-left {
+                     margin: 15px 0px;
+                     width: 100%;
+                     text-align: center;
+
+                     form {
+                        padding: 0px 30px;
+
+                        .src-store {
+                           border-radius: none;
+                           background-color: rgba(255, 255, 0, 0.651);
+                           outline: none;
+                           border: 1px solid rgba(108, 117, 125);
+                        }
+
+                        .btn-search {
+                           background-color: rgba(255, 255, 0, 0.651);
+                           border-radius: none;
+                           border-left: none;
+
+                           &:hover {
+                              color: red;
+                           }
+                        }
+                     }
+                  }
+
+                  // .tab-right{}
+               }
+            }
+         }
+
+         .store-maps {
+            padding: 0 !important;
+         }
+      }
+   }
+}

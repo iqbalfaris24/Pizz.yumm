@@ -23,33 +23,9 @@
                text-align: start;
             }
 
-            input {
-               background-color: transparent !important;
-               border: none;
-               border-bottom: 1px solid red;
 
-               &:active,
-               ::after,
-               :focus,
-               :active {
-                  border: none;
-               }
-            }
 
-            button {
-               background-color: rgba(255, 0, 0, 0.76);
-               color: white;
-               border: 1px solid rgba(255, 0, 0, 0.76);
-               border-radius: 20px;
-               margin: 5px;
 
-               &:hover {
-                  background-color: rgb(255, 0, 0);
-                  color: white;
-                  border: 1px solid white;
-
-               }
-            }
 
          }
       }
