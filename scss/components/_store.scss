@@ -1,6 +1,21 @@
 .store {
    margin-bottom: 50px;
 
+   .splide {
+      margin-bottom: 50px;
+      border-radius: 20px;
+      overflow: hidden;
+
+      .splide__track {
+         .splide__list {
+            .splide__slide {
+               max-height: 450px;
+            }
+         }
+      }
+
+   }
+
    .card-store {
       min-height: 800px;
       width: 100%;

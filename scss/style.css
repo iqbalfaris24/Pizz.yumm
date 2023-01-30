@@ -5463,6 +5463,14 @@ h2 {
 .store {
   margin-bottom: 50px;
 }
+.store .splide {
+  margin-bottom: 50px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.store .splide .splide__track .splide__list .splide__slide {
+  max-height: 450px;
+}
 .store .card-store {
   min-height: 800px;
   width: 100%;
