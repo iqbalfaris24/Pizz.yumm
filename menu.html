@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="scss/style.css">
+   <link rel="stylesheet" href="splide/dist/css/splide.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+   <script src="https://unpkg.com/feather-icons"></script>
+   <script src="https://kit.fontawesome.com/d8bf84de76.js" crossorigin="anonymous"></script>
+   <title>Store</title>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+         <a class="navbar-brand" href="#">Pizz.yumm</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-pizza-slice"></i></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="store.html">Store</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Delivery</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+               </li>
+            </ul>
+            <row class="right">
+               <div class="col-8 col-sm-10">
+                  <form class="d-flex" role="search">
+                     <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+               </div>
+               <div class="col-sm-2">
+                  <div class="dropdown user">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i data-feather="user"></i>
+                     </button>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a class="dropdown-item" href="login.html">
+                              <i data-feather="log-in"></i>
+                              <span>Login</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="register.html">
+                              <i data-feather="user-plus"></i>
+                              <span>Register</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </row>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container menu">
+      <div class="row">
+         <div class="col-6 col-md-4 col-lg-3 mt-3 menu-card">
+            <div class="card">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <p class="title">FLIP CARD</p>
+                     <p>Hover Me</p>
+                  </div>
+                  <div class="flip-card-back">
+                     <p class="title">BACK</p>
+                     <p>Leave Me</p>
+                  </div>
+               </div>
+               <!-- <div class="card-footer">
+                  <button id="decrement">-</button>
+                  <input type="number" id="counter" value="0">
+                  <button id="increment">+</button>
+
+               </div> -->
+            </div>
+         </div>
+         <div class="col-6 col-md-4 col-lg-3 mt-3 menu-card">
+            <div class="card">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <p class="title">FLIP CARD</p>
+                     <p>Hover Me</p>
+                  </div>
+                  <div class="flip-card-back">
+                     <p class="title">BACK</p>
+                     <p>Leave Me</p>
+                  </div>
+               </div>
+               <!-- <div class="card-footer">
+                  <button id="decrement">-</button>
+                  <input type="number" id="counter" value="0">
+                  <button id="increment">+</button>
+
+               </div> -->
+            </div>
+         </div>
+         <div class="col-6 col-md-4 col-lg-3 mt-3 menu-card">
+            <div class="card">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <p class="title">FLIP CARD</p>
+                     <p>Hover Me</p>
+                  </div>
+                  <div class="flip-card-back">
+                     <p class="title">BACK</p>
+                     <p>Leave Me</p>
+                  </div>
+               </div>
+               <!-- <div class="card-footer">
+                  <button id="decrement">-</button>
+                  <input type="number" id="counter" value="0">
+                  <button id="increment">+</button>
+
+               </div> -->
+            </div>
+         </div>
+         <div class="col-6 col-md-4 col-lg-3 mt-3 menu-card">
+            <div class="card">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <p class="title">FLIP CARD</p>
+                     <p>Hover Me</p>
+                  </div>
+                  <div class="flip-card-back">
+                     <p class="title">BACK</p>
+                     <p>Leave Me</p>
+                  </div>
+               </div>
+               <!-- <div class="card-footer">
+                  <button id="decrement">-</button>
+                  <input type="number" id="counter" value="0">
+                  <button id="increment">+</button>
+
+               </div> -->
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script>
+      feather.replace()
+   </script>
+   <script src="splide/dist/js/splide.js"></script>
+   <script src="splide/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.js"></script>
+   <!-- <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         new Splide('.splide', {
+            type: 'loop',
+            drag: 'free',
+            snap: true,
+            focus: 'center',
+            perPage: getPerPage(),
+            autoScroll: {
+               speed: 0.2,
+            },
+         }).mount(window.splide.Extensions);
+         window.addEventListener('resize', function () {
+            splide.options.perPage = getPerPage();
+            splide.refresh();
+         });
+
+         function getPerPage() {
+            if (window.innerWidth < 576) {
+               return 1;
+            } else if (window.innerWidth < 756) {
+               return 3;
+            } else {
+               return 5;
+            }
+         }
+      });
+
+   </script> -->
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         new Splide('#image-carousel', {
+            rewind: true,
+            autoplay: true,
+            arrows: false,
+            type: 'loop',
+            focus: 'center',
+         }).mount();
+      });
+
+      const counter = document.querySelector('#counter');
+      const decrement = document.querySelector('#decrement');
+      const increment = document.querySelector('#increment');
+
+      let count = 0;
+
+      counter.addEventListener('change', () => {
+         count = Math.max(Math.min(+counter.value, 99), 0) || 0;
+         counter.value = count;
+      });
+
+      decrement.addEventListener('click', () => {
+         count = Math.max(count - 1, 0);
+         counter.value = count;
+      });
+
+      increment.addEventListener('click', () => {
+         count = Math.min(count + 1, 99);
+         counter.value = count;
+      });
+
+   </script>
+</body>
+
+</html>
